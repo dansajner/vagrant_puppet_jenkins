@@ -1,0 +1,13 @@
+jenkins::version: 'latest'
+jenkins::cli: 'true'
+jenkins::configure_firewall: false
+jenkins::plugin_hash:
+  'git': {}
+  'git-client': {}
+  'github': {}
+  'github-api': {}
+  'ghprb': {}
+  'greenballs': {}
+  'mapdb-api': {}
+  'scm-api': {}
+  'token-macro': {}
