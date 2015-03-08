@@ -2,7 +2,7 @@
 Resources for a CentOS instance provisioned with Puppet
 
 ### Installation
-If you do not have Vagrant and a VM provider like VirtualBox installed so that first... https://www.vagrantup.com/
+If you do not have Vagrant and a VM provider like VirtualBox installed do that first... https://www.vagrantup.com/
 
 Clone this repo
 
