@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Columbus DevOps presentation</title>
+
+		<meta name="description" content="Columbus Devops presentation - Microservice Architectures Require Devops">
+		<meta name="author" content="Dan Sajner and Bill Schwanitz">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+
+				  <section data-markdown>
+## Welcome to Devops Columbus!
+
+Dan Sajner
+
+Bill Schwanitz
+
+#### Big thanks to our hosts [Pillar Technology](http://www.pillartechnology.com/)
+
+				  </section>
+				  <section data-markdown>
+## Today's Topics:
+
+  `Microservice Architectures Require Devops`
+
+  `Puppet + Jenkins for CI plus other CI options`
+
+				  </section>
+				</section>
+
+		  <section data-markdown>
+## Microservice Architectures Require Devops
+
+Monolithic Application versus Microservices
+
+![img](http://image.slidesharecdn.com/statelessauthenticationformicroservices-141211091054-conversion-gate02/95/stateless-authentication-for-microservices-12-638.jpg?cb=1418311349)
+		  </section>
+		  <section data-markdown>
+## Microservice Architectures Require Devops
+
+Monolithic Application versus Microservices
+
+![img](https://developer.ibm.com/bluemix/wp-content/uploads/sites/20/2015/01/microvsmono.png)
+                  </section>
+
+		  <section>
+		    <section data-markdown>
+## Monolithic App Deployments
+
+![img](http://flylib.com/books/3/166/1/html/2/files/fig28_01.jpeg)
+
+  * Difficult to upgrade live
+    * Especially when dependencies exist between top web stack and lower tiers
+  * Longer time between deployments means higher risk
+  * Likelihood of 'living with' bugs for longer
+  * Benefits of new features take longer to realize
+
+		  </section>
+		    <section data-markdown>
+## Monolithic App Deployments
+
+![img](http://flylib.com/books/3/166/1/html/2/files/fig28_01.jpeg)
+
+  But...
+
+  * Typically low operational overhead 
+
+		    </section>
+		    <section data-markdown>
+## Microservices Architecture
+
+  * Limited functionality in any app means less risk to deploy.
+  * Less risk means more deploys.
+  * More deploys means more features to customers.
+  * More features to customers faster than your competitor is called WINNING!
+
+		    </section>
+		    <section data-markdown>
+## Microservices Complexity
+
+  But, many more apps means we need...
+
+  * Automated server builds
+  * Configuration management (Puppet, Chef, etc)
+  * Deployment Automation
+  * Self-provisioning Monitors
+  * Load Balancer Automation
+  * Firewall Automation
+
+		    </section>
+		    <section data-markdown>
+## This is Devops!
+
+In order to harness the competitive advantage of microservices (aka WIN) we must be able to scale fast.  This is accomplished by eliminating all manual operations tasks.
+		    </section>
+
+		    <section data-markdown>
+### Puppet + Jenkins + Other CI Tools
+
+		    </section>
+		    <section data-markdown>
+## Next Meetup
+
+  * When: Tuesday, April 14
+  * Location: TBD
+  * Topic: TBD
+                  </section>
+		  </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
