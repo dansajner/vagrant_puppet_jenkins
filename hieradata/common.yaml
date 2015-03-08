@@ -11,3 +11,4 @@ jenkins::plugin_hash:
   'mapdb-api': {}
   'scm-api': {}
   'token-macro': {}
+  'chucknorris': {}
